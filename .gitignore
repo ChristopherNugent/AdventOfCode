@@ -1,0 +1,4 @@
+# Artifact folders
+**/bin
+**/obj
+.vs
