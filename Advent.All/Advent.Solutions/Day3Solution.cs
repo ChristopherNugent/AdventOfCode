@@ -27,11 +27,6 @@ namespace Advent.Solutions
 
             var productOfPathTreeCounts = paths
                 .Select(p => YieldPath(map, 0, 0, p.dx, p.dy).Count(t => t == TileType.Tree))
-                .Select( p =>
-                {
-                    writer.WriteLine($"Trees on path: {p}");
-                    return p;
-                })
                 .Aggregate(1L, (a, b) => a * b);
 
             writer.WriteLine($"Product of number of trees on paths: {productOfPathTreeCounts}");
