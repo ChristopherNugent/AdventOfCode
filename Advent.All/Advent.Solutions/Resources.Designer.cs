@@ -244,5 +244,56 @@ namespace Advent.Solutions {
                 return ResourceManager.GetString("Day4Input", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BFBFFFFLLL
+        ///BBFBBFBRLL
+        ///BFBBFFFRRR
+        ///FBFFBBBLLL
+        ///FFBBFBBRLL
+        ///BBBFFFFLRL
+        ///BFBBBFBRRR
+        ///FBBFFFBLRL
+        ///FFBFBBFLLR
+        ///FBFFFFBLRL
+        ///BBFFBBFRLL
+        ///BBFBBBBLLR
+        ///FFBBBBFRLR
+        ///BBFFBFFRLR
+        ///BFFBBFFRRL
+        ///BBFBBBFLLR
+        ///FBFBBBBRRL
+        ///BFFFBFFLRL
+        ///FBFFFBFRLL
+        ///FBBBFFBLRR
+        ///FFFBFBBRLR
+        ///FBBFBBFLLR
+        ///FBFBFFFLRL
+        ///BFFBFBFLLR
+        ///BBFBFBBRRL
+        ///BFFBBFBRLR
+        ///FBFBFFFRRL
+        ///BFBFFBBRRL
+        ///FBFBFBFLLL
+        ///BFFBFFBRRL
+        ///FFBBBBBRRL
+        ///FFFBFBFRLR
+        ///BBFFFBBLRL
+        ///BFBFBFFRLL
+        ///BFBFFFBRLR
+        ///FBBBFFFRRR
+        ///BBFFFBFRLL
+        ///FBBBFBFRLL
+        ///FFBBBFFLRR
+        ///FBFBBFBLRL
+        ///FBBBBBFLLR
+        ///FBFFBBBLRL
+        ///FFFBBFFR [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day5Input {
+            get {
+                return ResourceManager.GetString("Day5Input", resourceCulture);
+            }
+        }
     }
 }
