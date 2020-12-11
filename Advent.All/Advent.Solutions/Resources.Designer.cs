@@ -295,5 +295,64 @@ namespace Advent.Solutions {
                 return ResourceManager.GetString("Day5Input", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to gyrf
+        ///idg
+        ///
+        ///azedybkmuwgotq
+        ///uqztdwasygmb
+        ///
+        ///ljivrzewb
+        ///srndxmz
+        ///rzbhtge
+        ///rzgl
+        ///
+        ///zgxbwupetnlrqhjkc
+        ///itbfpruxhkcwzlnoeq
+        ///xtrlnkpczewuqhb
+        ///nxpczrkhulstqweb
+        ///
+        ///firzbpnk
+        ///nfkiz
+        ///nfzik
+        ///ifkzn
+        ///ofkinz
+        ///
+        ///wjcnrhaixfkpqsveby
+        ///pxivekfanqbyhjcwsr
+        ///newisvxabphcjkqyrf
+        ///
+        ///pugwelohkyjfbcviq
+        ///phnjxlweqzfocmyuig
+        ///cfgqpeuryhiojwl
+        ///
+        ///bkdnxmyalw
+        ///xabwnydk
+        ///xynzthwobdk
+        ///qedbynukjxwsc
+        ///ydbnkwx
+        ///
+        ///viswnyoqkbte
+        ///sbywenoiqktr
+        ///qsyebntoikw
+        ///yneipakwqbsotr
+        ///
+        ///hjrt
+        ///veypxkabt
+        ///ltgjrd
+        ///ntg
+        ///qctshgz
+        ///
+        ///bvdlhjsm
+        ///lomjbsv
+        ///bqjymlvws
+        ///bd [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day6Input {
+            get {
+                return ResourceManager.GetString("Day6Input", resourceCulture);
+            }
+        }
     }
 }

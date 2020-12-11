@@ -57,8 +57,7 @@ namespace Advent.Solutions
 
         private List<Passport> GetProblemInput()
         {
-            var passportSplitRegex = new Regex(@"(\r?\n){2,}");
-            var passportStrings = passportSplitRegex.Split(Resources.Day4Input);
+            var passportStrings = InputUtils.SplitIntoLineGroups(Resources.Day4Input);
             var passports = passportStrings.Select(Passport.Parse);
             return passports.ToList(); ;
         }

@@ -31,7 +31,7 @@ namespace Advent.Solutions
         }
 
         private IEnumerable<PasswordEntry> GetProblemInput()
-            => Resources.Day2Input.Split("\r\n")
+            => InputUtils.SplitLines(Resources.Day2Input)
                 .Where(s => !string.IsNullOrWhiteSpace(s))
                 .Select(PasswordEntry.Parse);
 

@@ -27,9 +27,8 @@ namespace Advent.Solutions
         }
 
         private IReadOnlyList<int> GetProblemInput()
-            => Resources.Day1Input.Split("\n")
-            .Where( s => !string.IsNullOrWhiteSpace(s))
-            .Select( s => int.Parse(s.Trim()))
+            => InputUtils.SplitLines(Resources.Day1Input)
+            .Select( s => int.Parse(s) )
             .ToList();
 
 

@@ -74,7 +74,7 @@ namespace Advent.Solutions
 
             public static Map Parse( string input )
             {
-                var map = input.Split("\r\n", StringSplitOptions.RemoveEmptyEntries)
+                var map = InputUtils.SplitLines(input)
                     .Where(s => !string.IsNullOrWhiteSpace(s))
                     .Select(ParseRow)
                     .ToList();
