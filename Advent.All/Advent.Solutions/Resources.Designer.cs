@@ -210,5 +210,39 @@ namespace Advent.Solutions {
                 return ResourceManager.GetString("Day3Input", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to byr:2010 pid:#1bb4d8 eyr:2021 hgt:186cm iyr:2020 ecl:grt
+        ///
+        ///pid:937877382 eyr:2029
+        ///ecl:amb hgt:187cm iyr:2019
+        ///byr:1933 hcl:#888785
+        ///
+        ///ecl:hzl
+        ///eyr:2020
+        ///hcl:#18171d
+        ///iyr:2019 hgt:183cm
+        ///byr:1935
+        ///
+        ///hcl:#7d3b0c hgt:183cm cid:135
+        ///byr:1992 eyr:2024 iyr:2013 pid:138000309
+        ///ecl:oth
+        ///
+        ///ecl:hzl
+        ///hgt:176cm pid:346059944 byr:1929 cid:150 eyr:1924 hcl:#fffffd iyr:2016
+        ///
+        ///iyr:2011
+        ///cid:99 ecl:amb
+        ///eyr:2030 hcl:#18171d
+        ///hgt:165cm pid:897123249 byr:1948
+        ///
+        ///hcl:#cfa07d pid:827609097 ecl:gry iyr:2017 byr:1963
+        ///eyr:2029 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day4Input {
+            get {
+                return ResourceManager.GetString("Day4Input", resourceCulture);
+            }
+        }
     }
 }

@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Advent.Solutions.Interfaces;
 using Autofac;
 using System.Linq;
-using Advent.Solutions.Interfaces;
 
 namespace Advent.Solutions
 {
