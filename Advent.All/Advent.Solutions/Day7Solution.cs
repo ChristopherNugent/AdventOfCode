@@ -18,11 +18,15 @@ namespace Advent.Solutions
 
         public void Execute(StreamReader consoleReader, StreamWriter writer)
         {
-            if( rules == null )
+            if (rules == null)
             {
                 writer.WriteLine("Loading and parsing bag rules...");
                 rules = LoadInput();
                 writer.WriteLine($"Loaded {rules.Count} rules.");
+            }
+            else
+            {
+                writer.WriteLine("Reusing cached bag rules.");
             }
             var ruleDictionary = rules.ToDictionary(r => r.Color);
             var colors = rules.Select(r => r.Color);
@@ -112,7 +116,10 @@ namespace Advent.Solutions
             {
                 if( parseRegex == null )
                 {
-                    parseRegex = new Regex(@"(?<thisBag>.+) bags contain (?<contents>((?<count>\d+) (?<color>[^.,]+) bags?[,.]\s?)+|(no other bags.))");
+                    
+                    parseRegex = new Regex(
+                        @"(?<thisBag>.+) bags contain (?<contents>((?<count>\d+) (?<color>[^.,]+) bags?[,.]\s?)+|(no other bags.))",
+                        RegexOptions.Compiled );
                 }
                 var match = parseRegex.Match(rule);
                 var thisBagColor = match.Groups["thisBag"].Value;
