@@ -35,6 +35,8 @@ namespace Advent.ConsoleApp
                         continue;
                     }
 
+
+                    Console.WriteLine($"Starting solution for problem {problemNumber}...\n");
                     Stopwatch stopwatch;
                     using (var reader = new StreamReader(Console.OpenStandardInput()))
                     using (var writer = new StreamWriter(Console.OpenStandardOutput()))
@@ -42,9 +44,9 @@ namespace Advent.ConsoleApp
                         stopwatch = Stopwatch.StartNew();
                         var solution = solutionDictionary[problemNumber];
                         solution.Execute(reader, writer);
+                        stopwatch.Stop();
                     }
-                    stopwatch.Stop();
-                    Console.WriteLine($"Measured {stopwatch.ElapsedMilliseconds} ms\n");
+                    Console.WriteLine($"\nMeasured {stopwatch.ElapsedMilliseconds} ms for solution time.\n");
                 }
             }
             Console.WriteLine("Goodbye.");
