@@ -31,8 +31,6 @@ namespace Advent.Solutions
             .Select( s => int.Parse(s) )
             .ToList();
 
-
-
         private Solution FindSolutionOrNull(IEnumerable<int> numbers, int count, int sum)
         {
             return numbers.CombinationsWithoutRepetition(count)
@@ -42,7 +40,7 @@ namespace Advent.Solutions
 
         private void WriteSolution( Solution s, StreamWriter writer )
         {
-            writer.WriteLine($"{string.Join(" * ", s.Factors)} => {s.Product}");
+            writer.WriteLine($"{string.Join(" * ", s.Factors)} => {s.Product}. Combinations considered: {s.Id + 1:N0}.");
         }
 
         private class Solution
@@ -51,20 +49,24 @@ namespace Advent.Solutions
             public int Product { get; }
             public int Sum { get; }
 
-            private Solution(IReadOnlyList<int> factors, int product, int sum)
+            public int Id { get; }
+
+            private Solution(IReadOnlyList<int> factors, int product, int sum, int id)
             {
                 Factors = factors.ToList();
                 Product = product;
                 Sum = sum;
+                Id = id;
             }
 
-            public static Solution Create(IEnumerable<int> factors)
+            public static Solution Create(IEnumerable<int> factors, int id )
             {
                 var factorsList = factors.ToList();
                 return new Solution(
                     factorsList,
                     factorsList.Aggregate(1, (a, b) => a * b),
-                    factorsList.Sum()
+                    factorsList.Sum(),
+                    id
                 );
             }
 

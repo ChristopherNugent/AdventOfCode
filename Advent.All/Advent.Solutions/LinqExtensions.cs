@@ -11,7 +11,7 @@ namespace Advent.Solutions
             int ofLength)
         {
             return (ofLength == 1) ?
-                items.Select(item => new[] { item }) :
+                items.Select(item => Enumerable.Repeat(item, 1)) :
                 items.SelectMany((item, i) => items.Skip(i + 1)
                                                    .CombinationsWithoutRepetition(ofLength - 1)
                                                    .Select(result => result.Prepend(item)));
