@@ -369,5 +369,69 @@ namespace Advent.Solutions {
                 return ResourceManager.GetString("Day7Input", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to acc +22
+        ///acc +34
+        ///jmp +167
+        ///acc +46
+        ///acc +25
+        ///acc -10
+        ///acc +11
+        ///jmp +540
+        ///acc +0
+        ///jmp +242
+        ///acc +26
+        ///acc +46
+        ///jmp +242
+        ///jmp +287
+        ///acc -8
+        ///acc +30
+        ///acc +3
+        ///nop +350
+        ///jmp +471
+        ///acc +2
+        ///acc +0
+        ///acc +14
+        ///jmp +207
+        ///jmp +1
+        ///acc -10
+        ///acc +12
+        ///jmp +281
+        ///acc +18
+        ///jmp +515
+        ///acc -18
+        ///acc +33
+        ///jmp +379
+        ///acc +48
+        ///acc +38
+        ///jmp +220
+        ///acc +44
+        ///nop +546
+        ///acc +21
+        ///jmp +537
+        ///acc +33
+        ///nop +224
+        ///nop +379
+        ///jmp +2
+        ///jmp -30
+        ///jmp +246
+        ///acc -14
+        ///acc -3
+        ///jmp +410
+        ///acc +50
+        ///nop +323
+        ///acc +2
+        ///acc +24
+        ///jmp +25
+        ///jmp +372
+        ///acc +29
+        ///acc +1 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day8Input {
+            get {
+                return ResourceManager.GetString("Day8Input", resourceCulture);
+            }
+        }
     }
 }
